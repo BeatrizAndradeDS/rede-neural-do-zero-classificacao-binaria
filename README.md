@@ -1,17 +1,30 @@
-# 🧠 Rede Neural do Zero para Detecção de Fraude
+# 🧠 Rede Neural Artificial do Zero para Detecção de Fraude
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-2.3.1-orange.svg)](https://numpy.org/)
+[![Neural Network](https://img.shields.io/badge/Neural%20Network-From%20Scratch-red.svg)](https://github.com/biasandrade/rede-neural-deteccao-fraude)
 
-Implementei uma rede neural artificial usando apenas NumPy para detectar fraudes em transações financeiras. O objetivo aqui foi entender **como uma rede neural funciona por dentro**, sem usar TensorFlow, Keras ou PyTorch.
+Implementei uma rede neural artificial **do zero** usando apenas NumPy para detectar fraudes em transações financeiras. O objetivo aqui foi entender **como uma rede neural funciona por dentro**, sem usar TensorFlow, Keras ou PyTorch.
 
 ---
 
-## 🎯 Sobre o Projeto
+🎯 Objetivo
+Construir uma rede neural artificial sem usar bibliotecas prontas (TensorFlow, Keras, PyTorch) para:
 
-Sempre quis entender de verdade o que acontece dentro de uma rede neural. Tive a oportunidade de aprender e construir do zero, implementando cada etapa manualmente: forward propagation, backward propagation, função de ativação, gradiente descendente... Tudo com operações de matriz usando NumPy.
+•	Entender a matemática por trás das redes neurais
+•	Implementar forward e backward propagation manualmente
+•	Detectar padrões de fraude em transações financeiras
 
-O problema escolhido foi detecção de fraude em transações financeiras - um caso clássico de classificação binária.
+O problema escolhido foi detecção de fraude em transações financeiras - um caso clássico de classificação binária. Mas essa mesma arquitetura pode ser aplicada a diversos outros problemas, como:
+
+- 📚 **Prever aprovação de alunos** baseado em horas de estudo
+- 🛒 **Identificar propensão a compra** a partir do comportamento no site
+- 🏥 **Apoiar decisões médicas** sobre necessidade de exames adicionais (ex: idade + IMC)
+- 💳 **Aprovar ou negar crédito** com base em histórico financeiro
+- 📧 **Classificar spam** em emails
+- 🎯 **Prever churn** de clientes
+
+Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa estrutura.
 
 ---
 
@@ -173,18 +186,17 @@ Execute célula por célula pra acompanhar o processo de treinamento.
 
 ---
 
-## 🧠 O Que Aprendi
+## 🧠 Conteúdo Utilizado
 
-Este projeto foi parte do curso de **Matemática e Estatística Aplicada para Data Science** da Data Science Academy. 
+Este projeto foi desenvolvido no curso de **Matemática e Estatística Aplicada para Data Science** da Data Science Academy. 
 
-Principais conceitos aplicados:
-- Álgebra linear (multiplicação de matrizes, transposição)
-- Cálculo diferencial (derivadas parciais, gradiente)
-- Otimização (gradiente descendente)
-- Forward e backward propagation
-- Função de ativação sigmoid
+Conceitos aplicados:
+- **Álgebra Linear:** multiplicação de matrizes, transposição, operações vetoriais
+- **Cálculo Diferencial:** derivadas parciais, gradiente
+- **Otimização:** gradiente descendente, taxa de aprendizado
+- **Machine Learning:** forward propagation, backward propagation, função de ativação sigmoid
 
-O mais legal foi ver na prática como pequenos ajustes nos pesos, repetidos mil vezes, fazem o modelo convergir para a solução.
+O mais interessante foi ver na prática como pequenos ajustes nos pesos, repetidos mil vezes, fazem o modelo convergir para a solução.
 
 ---
 
@@ -203,7 +215,7 @@ Ideias para evoluir o projeto:
 ## 👩‍💻 Autora
 
 **Beatriz Andrade**  
-18 anos com dados | 2024: Machine Learning
+18 anos trabalhando com dados e agora com Machine Learning
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Beatriz%20Andrade-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/andrade-beatriz/)
 [![GitHub](https://img.shields.io/badge/GitHub-biasandrade-black?style=flat&logo=github)](https://github.com/biasandrade)
@@ -213,7 +225,7 @@ Ideias para evoluir o projeto:
 
 ## 📄 Licença
 
-MIT License - use à vontade, modifique, aprenda.
+MIT License - use à vontade.
 
 ---
 
