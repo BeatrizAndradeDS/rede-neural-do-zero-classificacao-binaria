@@ -30,6 +30,8 @@ Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa est
 
 ## 🎬 Demonstração
 
+![Sistema em Ação](demo.gif)
+
 <details>
 <summary>📊 <b>Ver resultados</b></summary>
 
