@@ -61,7 +61,7 @@ A rede é bem simples - um perceptron de camada única:
 ```
 Entrada (2 features) 
     ↓
-Soma Ponderada (W·X + b)
+Soma Ponderada: Peso(W) · entradas(X) + viés/bias(b)
     ↓
 Função Sigmoid
     ↓
