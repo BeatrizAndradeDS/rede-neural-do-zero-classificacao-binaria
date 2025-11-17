@@ -47,7 +47,7 @@ Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa est
 | [1, 2] | 0 | Transação Normal |
 | [4, 5] | 1 | ⚠️ Transação Suspeita |
 
-**Acurácia:** 100% nos dados de teste (dataset pequeno, claro, mas o foco aqui é didático)
+**Acurácia:** 2/2 corretos nos dados de teste (dataset pequeno, mas o foco aqui é didático).
 
 </details>
 
@@ -95,6 +95,23 @@ b = b - taxa_aprendizado · ∂b
 ```
 
 A cada iteração, os pesos e o bias são ajustados para minimizar o erro.
+
+</details>
+
+---
+
+<details>
+<summary>🔬 <b>Entendendo o processo de treinamento</b></summary>
+
+### O que acontece a cada iteração?
+
+1. **Forward Pass:** Modelo faz previsões
+2. **Cálculo do Erro:** Compara com valores reais
+3. **Backward Pass:** Calcula gradientes
+4. **Atualização:** Ajusta pesos e bias
+
+Após 1000 iterações, os pesos convergem de [0, 0] para [1.26, -0.47], 
+minimizando o erro e aprendendo a separar as classes.
 
 </details>
 
@@ -202,7 +219,7 @@ O mais interessante foi ver na prática como pequenos ajustes nos pesos, repetid
 
 ## 🔮 Próximos Passos
 
-Ideias para evoluir o projeto:
+Ideias para evoluir o projeto futuramente:
 - [ ] Adicionar camadas ocultas (transformar em deep neural network)
 - [ ] Testar outras funções de ativação (ReLU, Tanh)
 - [ ] Implementar regularização (L1/L2)
