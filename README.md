@@ -22,12 +22,14 @@ Construir uma rede neural artificial sem usar bibliotecas prontas (TensorFlow, K
 
 O problema escolhido foi detecção de fraude em transações financeiras - um caso clássico de classificação binária. Mas essa mesma arquitetura pode ser aplicada a diversos outros problemas, como:
 
-- 📚 **Prever aprovação de alunos** baseado em horas de estudo
-- 🛒 **Identificar propensão a compra** a partir do comportamento no site
-- 🏥 **Apoiar decisões médicas** sobre necessidade de exames adicionais (ex: idade + IMC)
-- 💳 **Aprovar ou negar crédito** com base em histórico financeiro
-- 📧 **Classificar spam** em emails
-- 🎯 **Prever churn** de clientes
+- 💳 **Detecção de fraude:** Identificar transações suspeitas em cartões de crédito
+- 📚 **Educação:** Prever aprovação de alunos baseado em horas de estudo e notas
+- 🛒 **E-commerce:** Identificar propensão a compra a partir do comportamento no site
+- 🏥 **Saúde:** Apoiar decisões médicas sobre necessidade de exames (ex: idade + IMC)
+- 💰 **Crédito:** Aprovar ou negar empréstimos com base em histórico financeiro
+- 📧 **Spam:** Classificar emails como spam ou legítimos
+- 🎯 **Churn:** Prever se cliente vai cancelar serviço
+- 📱 **App engagement:** Prever se usuário vai abrir o app no dia seguinte
 
 Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa estrutura.
 
