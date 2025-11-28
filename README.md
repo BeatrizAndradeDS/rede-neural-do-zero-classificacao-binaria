@@ -15,6 +15,9 @@ Construir uma rede neural artificial sem usar bibliotecas prontas (TensorFlow, K
 •	Implementar forward e backward propagation manualmente
 •	Detectar padrões de fraude em transações financeiras
 
+---
+
+📝 Outras atribuições
 O problema escolhido foi detecção de fraude em transações financeiras - um caso clássico de classificação binária. Mas essa mesma arquitetura pode ser aplicada a diversos outros problemas, como:
 
 - 📚 **Prever aprovação de alunos** baseado em horas de estudo
@@ -220,12 +223,12 @@ O mais interessante foi ver na prática como pequenos ajustes nos pesos, repetid
 ## 🔮 Próximos Passos
 
 Ideias para evoluir o projeto futuramente:
-- [ ] Adicionar camadas ocultas (transformar em deep neural network)
-- [ ] Testar outras funções de ativação (ReLU, Tanh)
-- [ ] Implementar regularização (L1/L2)
-- [ ] Usar dataset real de fraudes (Kaggle)
 - [ ] Adicionar métricas (precision, recall, F1)
 - [ ] Criar visualização da convergência
+- [ ] Testar outras funções de ativação (ReLU, Tanh)
+- [ ] Usar dataset real de fraudes (Kaggle)
+- [ ] Implementar regularização (L1/L2)
+- [ ] Adicionar camadas ocultas (transformar em deep neural network)
 
 ---
 
