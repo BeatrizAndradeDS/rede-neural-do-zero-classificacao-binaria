@@ -9,6 +9,7 @@ Implementei uma rede neural artificial **do zero** usando apenas NumPy para dete
 ---
 
 🎯 Objetivo
+
 Construir uma rede neural artificial sem usar bibliotecas prontas (TensorFlow, Keras, PyTorch) para:
 
 •	Entender a matemática por trás das redes neurais
@@ -18,6 +19,7 @@ Construir uma rede neural artificial sem usar bibliotecas prontas (TensorFlow, K
 ---
 
 📝 Outras atribuições
+
 O problema escolhido foi detecção de fraude em transações financeiras - um caso clássico de classificação binária. Mas essa mesma arquitetura pode ser aplicada a diversos outros problemas, como:
 
 - 📚 **Prever aprovação de alunos** baseado em horas de estudo
@@ -56,23 +58,6 @@ Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa est
 
 </details>
 
----
-
-<details>
-<summary>🏗️ <b>Arquitetura da Rede</b></summary>
-
-A rede é bem simples - um perceptron de camada única:
-
-```
-Entrada (2 features) 
-    ↓
-Soma Ponderada: Peso(W) · entradas(X) + viés/bias(b)
-    ↓
-Função Sigmoid
-    ↓
-Saída (probabilidade de 0 a 1)
-    ↓
-Classificação (0 ou 1)
 ```
 
 ### Processo de Treinamento
