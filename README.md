@@ -178,16 +178,16 @@ Criei um dataset sintético simples para focar no algoritmo:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/biasandrade/rede-neural-deteccao-fraude.git
+git clone https://github.com/biasandrade/rede-neural-do-zero-classificacao-binaria.git
 
 # Entre na pasta
-cd rede-neural-deteccao-fraude
+cd rede_neural_class_binaria_fraude
 
 # Instale as dependências
 pip install -r requirements.txt
 
 # Abra o notebook
-jupyter notebook Projeto2-Final.ipynb
+jupyter notebook rede_neural_class_binaria_fraude.ipynb
 ```
 
 ### Executando
@@ -206,8 +206,6 @@ Execute célula por célula pra acompanhar o processo de treinamento.
 ---
 
 ## 🧠 Conteúdo Utilizado
-
-Este projeto foi desenvolvido no curso de **Matemática e Estatística Aplicada para Data Science** da Data Science Academy. 
 
 Conceitos aplicados:
 - **Álgebra Linear:** multiplicação de matrizes, transposição, operações vetoriais
@@ -242,9 +240,11 @@ Ideias para evoluir o projeto futuramente:
 
 ---
 
+Este projeto foi realizado por mim e faz parte do curso "Matemática e Estatística Aplicada Para Data Science, Machine Learning e IA" do curso de Pós-graduação em Data Science da Data Science Academy.
+
 ## 📄 Licença
 
-MIT License - use à vontade.
+MIT License.
 
 ---
 
