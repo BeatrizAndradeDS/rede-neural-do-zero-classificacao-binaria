@@ -4,43 +4,49 @@
 [![NumPy](https://img.shields.io/badge/NumPy-2.3.1-orange.svg)](https://numpy.org/)
 [![Neural Network](https://img.shields.io/badge/Neural%20Network-From%20Scratch-red.svg)](https://github.com/biasandrade/rede-neural-deteccao-fraude)
 
-Implementei uma rede neural artificial **do zero** usando apenas NumPy para detectar fraudes em transações financeiras. O objetivo aqui foi entender **como uma rede neural funciona por dentro**, sem usar TensorFlow, Keras ou PyTorch.
+Implementei uma rede neural artificial **do zero** usando apenas NumPy para detectar fraudes em transações financeiras. O objetivo foi entender **como uma rede neural funciona por dentro**, sem usar TensorFlow, Keras ou PyTorch.
 
 ---
 
-🎯 Objetivo
+## Objetivo
 
 Construir uma rede neural artificial sem usar bibliotecas prontas (TensorFlow, Keras, PyTorch) para:
 
-•	Entender a matemática por trás das redes neurais
-•	Implementar forward e backward propagation manualmente
-•	Detectar padrões de fraude em transações financeiras
+- Entender a matemática por trás das redes neurais
+- Implementar forward e backward propagation manualmente
+- Detectar padrões de fraude em transações financeiras
+
+<br/>
 
 ---
 
-📝 Outras atribuições
+## Outras aplicações
 
 O problema escolhido foi detecção de fraude em transações financeiras - um caso clássico de classificação binária. Mas essa mesma arquitetura pode ser aplicada a diversos outros problemas, como:
 
-- 💳 **Detecção de fraude:** Identificar transações suspeitas em cartões de crédito
-- 📚 **Educação:** Prever aprovação de alunos baseado em horas de estudo e notas
-- 🛒 **E-commerce:** Identificar propensão a compra a partir do comportamento no site
-- 🏥 **Saúde:** Apoiar decisões médicas sobre necessidade de exames (ex: idade + IMC)
-- 💰 **Crédito:** Aprovar ou negar empréstimos com base em histórico financeiro
-- 📧 **Spam:** Classificar emails como spam ou legítimos
-- 🎯 **Churn:** Prever se cliente vai cancelar serviço
-- 📱 **App engagement:** Prever se usuário vai abrir o app no dia seguinte
+- **Detecção de fraude:** Identificar transações suspeitas em cartões de crédito
+- **Educação:** Prever aprovação de alunos baseado em horas de estudo e notas
+- **E-commerce:** Identificar propensão a compra a partir do comportamento no site
+- **Saúde:** Apoiar decisões médicas sobre necessidade de exames (ex: idade + IMC)
+- **Crédito:** Aprovar ou negar empréstimos com base em histórico financeiro
+- **Spam:** Classificar emails como spam ou legítimos
+- **Churn:** Prever se cliente vai cancelar serviço
+- **App engagement:** Prever se usuário vai abrir o app no dia seguinte
 
 Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa estrutura.
 
+<br/>
+
 ---
 
-## 🎬 Demonstração
+## Demonstração
 
 ![Sistema em Ação](demo.gif)
 
 <details>
-<summary>📊 <b>Ver resultados</b></summary>
+<summary> <b>Ver resultados</b></summary>
+
+<br/>
 
 ### Dados de Teste
 
@@ -60,10 +66,10 @@ Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa est
 
 </details>
 
-```
 
 ### Processo de Treinamento
 
+<details>
 **Forward Pass:**
 ```python
 previsão = sigmoid(W·X + b)
@@ -90,10 +96,12 @@ A cada iteração, os pesos e o bias são ajustados para minimizar o erro.
 
 </details>
 
+<br/>
+
 ---
 
 <details>
-<summary>🔬 <b>Entendendo o processo de treinamento</b></summary>
+<summary><b>Entendendo o processo de treinamento</b></summary>
 
 ### O que acontece a cada iteração?
 
@@ -107,10 +115,12 @@ minimizando o erro e aprendendo a separar as classes.
 
 </details>
 
+<br/>
+
 ---
 
 <details>
-<summary>🔧 <b>Componentes Implementados</b></summary>
+<summary><b>Componentes Implementados</b></summary>
 
 ### 1. Função de Ativação Sigmoid
 Converte qualquer valor em uma probabilidade entre 0 e 1:
@@ -136,13 +146,15 @@ self.pesos -= self.taxa_aprendizado * dw
 self.bias -= self.taxa_aprendizado * db
 ```
 
-É aqui que a "mágica" acontece - o modelo aprende ajustando pesos e bias iterativamente.
+Aqui modelo aprende ajustando pesos e bias iterativamente.
 
 </details>
 
+<br/>
+
 ---
 
-## 📊 Dataset
+## Dataset
 
 Criei um dataset sintético simples para focar no algoritmo:
 
@@ -152,12 +164,14 @@ Criei um dataset sintético simples para focar no algoritmo:
 
 É um dataset pequeno de propósito - o objetivo é didático, não performance em produção.
 
+<br/>
+
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 <details>
-<summary><b>📥 Instruções de instalação</b></summary>
+<summary><b>Instruções de instalação</b></summary>
 
 ### Pré-requisitos
 - Python 3.8+
@@ -168,7 +182,7 @@ Criei um dataset sintético simples para focar no algoritmo:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/biasandrade/rede-neural-do-zero-classificacao-binaria.git
+git clone https://github.com/BeatrizAndradeDS/rede-neural-do-zero-classificacao-binaria.git
 
 # Entre na pasta
 cd rede_neural_class_binaria_fraude
@@ -193,9 +207,11 @@ Execute célula por célula pra acompanhar o processo de treinamento.
 
 </details>
 
+<br/>
+
 ---
 
-## 🧠 Conteúdo Utilizado
+## Conteúdo Utilizado
 
 Conceitos aplicados:
 - **Álgebra Linear:** multiplicação de matrizes, transposição, operações vetoriais
@@ -205,9 +221,11 @@ Conceitos aplicados:
 
 O mais interessante foi ver na prática como pequenos ajustes nos pesos, repetidos mil vezes, fazem o modelo convergir para a solução.
 
+<br/>
+
 ---
 
-## 🔮 Próximos Passos
+## Próximos Passos
 
 Ideias para evoluir o projeto futuramente:
 - [ ] Adicionar métricas (precision, recall, F1)
@@ -219,13 +237,13 @@ Ideias para evoluir o projeto futuramente:
 
 ---
 
-## 👩‍💻 Autora
+## Sobre mim
 
 **Beatriz Andrade**  
-18 anos trabalhando com dados e agora com Machine Learning
+18 anos trabalhando com dados e agora também com Machine Learning
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Beatriz%20Andrade-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/andrade-beatriz/)
-[![GitHub](https://img.shields.io/badge/GitHub-biasandrade-black?style=flat&logo=github)](https://github.com/biasandrade)
+[![GitHub](https://img.shields.io/badge/GitHub-BeatrizAndradeDS-black?style=flat&logo=github)](https://github.com/BeatrizAndradeDS)
 [![Email](https://img.shields.io/badge/Email-biasandrade%40gmail.com-red?style=flat&logo=gmail)](mailto:biasandrade@gmail.com)
 
 ---
