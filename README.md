@@ -1,4 +1,4 @@
-# 🧠 Rede Neural Artificial do Zero para Detecção de Fraude
+# Rede Neural Artificial do Zero para Detecção de Fraude
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-2.3.1-orange.svg)](https://numpy.org/)
@@ -43,34 +43,12 @@ Qualquer problema de classificação binária (sim/não, 0/1) pode usar essa est
 
 ![Sistema em Ação](demo.gif)
 
-<details>
-<summary> <b>Ver resultados</b></summary>
-
 <br/>
-
-### Dados de Teste
-
-| Entrada (Transação) | Valor Real | Previsão | Resultado |
-|---------------------|------------|----------|-----------|
-| [1.5, 2] | Normal (0) | 0 | ✅ Acertou |
-| [4, 5.5] | Fraude (1) | 1 | ✅ Acertou |
-
-### Novos Dados (Deploy)
-
-| Entrada | Previsão | Interpretação |
-|---------|----------|---------------|
-| [1, 2] | 0 | Transação Normal |
-| [4, 5] | 1 | ⚠️ Transação Suspeita |
-
-**Acurácia:** 2/2 corretos nos dados de teste (dataset pequeno, mas o foco aqui é didático).
-
-</details>
-
 
 ### Processo de Treinamento
 
-<details>
-**Forward Pass:**
+ **Forward Pass:**
+    
 ```python
 previsão = sigmoid(W·X + b)
 ```
@@ -93,6 +71,35 @@ b = b - taxa_aprendizado · ∂b
 ```
 
 A cada iteração, os pesos e o bias são ajustados para minimizar o erro.
+
+
+<br/>
+
+---
+
+
+<details>
+<summary> <b>Ver resultados</b></summary>
+
+<br/>
+
+### Dados de Teste
+
+| Entrada (Transação) | Valor Real | Previsão | Resultado |
+|---------------------|------------|----------|-----------|
+| [1.5, 2] | Normal (0) | 0 | Acertou |
+| [4, 5.5] | Fraude (1) | 1 | Acertou |
+
+### Novos Dados (Deploy)
+
+| Entrada | Previsão | Interpretação |
+|---------|----------|---------------|
+| [1, 2] | 0 | Transação Normal |
+| [4, 5] | 1 | Transação Suspeita |
+
+**Acurácia:** 2/2 corretos nos dados de teste (dataset pequeno, mas o foco aqui é didático).
+
+<br/>
 
 </details>
 
@@ -126,7 +133,7 @@ minimizando o erro e aprendendo a separar as classes.
 Converte qualquer valor em uma probabilidade entre 0 e 1:
 ```python
 def func_activation_sigmoid(self, pred):
-    return 1 / (1 + np.exp(-pred))
+    return 1 / (1 + np.exp(-pred))
 ```
 
 ### 2. Forward Pass
@@ -239,7 +246,7 @@ Ideias para evoluir o projeto futuramente:
 
 ## Sobre mim
 
-**Beatriz Andrade**  
+**Beatriz Andrade**  
 18 anos trabalhando com dados e agora também com Machine Learning
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Beatriz%20Andrade-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/andrade-beatriz/)
@@ -248,12 +255,13 @@ Ideias para evoluir o projeto futuramente:
 
 ---
 
-Este projeto foi realizado por mim e faz parte do curso "Matemática e Estatística Aplicada Para Data Science, Machine Learning e IA" do curso de Pós-graduação em Data Science da Data Science Academy.
 
-## 📄 Licença
+## Licença
 
 MIT License.
 
 ---
 
-⭐ Se esse projeto te ajudou a entender redes neurais, considera dar uma estrela!
+ Se esse projeto te ajudou a entender redes neurais, considera dar uma estrela!
+
+Beatriz Andrade11-99539-1817
