@@ -79,7 +79,7 @@ A cada iteração, os pesos e o bias são ajustados para minimizar o erro.
 
 
 <details>
-<summary> <b>Ver resultados</b></summary>
+<summary><b>Ver resultados</b></summary>
 
 <br/>
 
@@ -264,4 +264,3 @@ MIT License.
 
  Se esse projeto te ajudou a entender redes neurais, considera dar uma estrela!
 
-Beatriz Andrade11-99539-1817
