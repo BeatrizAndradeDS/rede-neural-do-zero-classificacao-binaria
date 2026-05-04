@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-2.3.1-orange.svg)](https://numpy.org/)
-[![Neural Network](https://img.shields.io/badge/Neural%20Network-From%20Scratch-red.svg)](https://github.com/biasandrade/rede-neural-deteccao-fraude)
+[![Neural Network](https://img.shields.io/badge/Neural%20Network-From%20Scratch-red.svg)](https://github.com/BeatrizAndradeDS/rede-neural-deteccao-fraude)
 
 Implementei uma rede neural artificial **do zero** usando apenas NumPy para detectar fraudes em transações financeiras. O objetivo foi entender **como uma rede neural funciona por dentro**, sem usar TensorFlow, Keras ou PyTorch.
 
@@ -250,7 +250,6 @@ Ideias para evoluir o projeto futuramente:
 18 anos trabalhando com dados e agora também com Machine Learning
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Beatriz%20Andrade-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/andrade-beatriz/)
-[![GitHub](https://img.shields.io/badge/GitHub-BeatrizAndradeDS-black?style=flat&logo=github)](https://github.com/BeatrizAndradeDS)
 [![Email](https://img.shields.io/badge/Email-biasandrade%40gmail.com-red?style=flat&logo=gmail)](mailto:biasandrade@gmail.com)
 
 ---
